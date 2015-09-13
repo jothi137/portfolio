@@ -1,0 +1,23 @@
+application: jothi-personal-portfolio
+version: alpha-001
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /css
+  static_dir: app/src/css
+
+- url: /images
+  static_dir: app/src/images
+
+- url: /js
+  static_dir: app/src/js
+
+- url: /(.+)
+  static_files: app/\1
+  upload: app/(.*)
+
+- url: /
+  static_files: app/index.html
+  upload: app/index.html
