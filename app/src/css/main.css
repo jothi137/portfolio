@@ -1,11 +1,15 @@
 body {
-	background-image: url("../images/website-background.jpg");
+	background-image: url("../images/background_gradient.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .page-title {
 	text-align: center;
 }
-
+.contents {
+	padding:20px;
+}
 footer {
 	position: absolute;
 	text-align: center;
@@ -13,4 +17,33 @@ footer {
 	bottom: 0;
 	left: 0;
 	right: 0;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.my-pic {
+	width: 200px;
+    height: 200px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.text {
+	padding-top: 15px;
+}
+
+.my-pic:hover {
+    width: 400px;
+    height: 400px;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.clearfix {
+	clear: both;
 }

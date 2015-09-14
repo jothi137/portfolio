@@ -20,26 +20,33 @@
 				portfolio.initialize();
 			}); 
 		</script>
-		<div>
-			<header class="page-title">
-				<h1>Hello, world!</h1>
-				<h3 id="today"> </h3>
-			</header>
-			<nav>
-				<ul class="nav nav-tabs">
-  					<li id="aboutMe" role="presentation" onclick="portfolio.aboutMe()"><a href="#">About me</a></li>
-				  	<li id="Education" role="presentation"><a href="#">Education</a></li>
-				  	<li id="Experience" role="presentation"><a href="#">Experience</a></li>
-				</ul>
-			</nav>
-			<div class="contents">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<header class="page-title">
+					<h1>Hello, world!</h1>
+					<h3 id="today"> </h3>
+				</header>
+				<nav>
+					<ul class="nav nav-tabs">
+	  					<li id="aboutMe" role="presentation" onclick="portfolio.aboutMe()"><a href="#">About me</a></li>
+					  	<li id="Education" role="presentation"><a href="#">Education</a></li>
+					  	<li id="Experience" role="presentation"><a href="#">Experience</a></li>
+					</ul>
+				</nav>
+				<div class="contents row">
+					<div id="aboutMeContents" class="col-lg-12 col-md-12 col-sm-12 hide">
+						<img class="my-pic col-lg-4 col-md-4 col-sm-12" src="src/images/jothi.jpg">
+						<div class="text col-lg-8 col-md-8 col-sm-12"></div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
 			</div>
-
-			<footer>
-				<p>
-					&copy; Copyright  by Jothi
-				</p>
-			</footer>
 		</div>
+		<footer>
+			<p>
+				&copy; Copyright  by Jothi
+			</p>
+		</footer>
 	</body>
 </html>
