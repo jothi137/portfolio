@@ -28,25 +28,150 @@
 				</header>
 				<nav>
 					<ul class="nav nav-tabs">
-	  					<li id="aboutMe" role="presentation" onclick="portfolio.aboutMe()"><a href="#">About me</a></li>
-					  	<li id="Education" role="presentation"><a href="#">Education</a></li>
-					  	<li id="Experience" role="presentation"><a href="#">Experience</a></li>
+	  					<li id="aboutMe" class="portfolio-tab" role="presentation" onclick="portfolio.aboutMe()"><a href="#">About me</a></li>
+					  	<li id="education" class="portfolio-tab" role="presentation" onclick="portfolio.education()"><a href="#">Education</a></li>
+					  	<li id="experience" class="portfolio-tab" role="presentation" onclick="portfolio.experience()"><a href="#">Experience</a></li>
 					</ul>
 				</nav>
 				<div class="contents row">
-					<div id="aboutMeContents" class="col-lg-12 col-md-12 col-sm-12 hide">
-						<img class="my-pic col-lg-4 col-md-4 col-sm-12" src="src/images/jothi.jpg">
-						<div class="text col-lg-8 col-md-8 col-sm-12"></div>
+					<div id="aboutMeContents" class="portfolio-tab-contents col-lg-12 col-md-12 col-sm-12 hide">
+						<img class="my-pic col-lg-6 col-md-6 col-sm-6" src="src/images/jothi.jpg">
+						<div class="text col-lg-6 col-md-6 col-sm-6"></div>
 						<div class="clearfix"></div>
+					</div>
+					<div id="educationContents" class="portfolio-tab-contents col-lg-12 col-md-12 col-sm-12 hide">
+						<div class="row bachelors">
+							<div class="col-lg-4 col-md-4 col-sm-4 school">
+								<h4>Amrita University, India</h4>
+								<p>2006 - 2010</p>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 degree">
+								<strong>
+									Bachelors of Technology in Information Technology
+								</strong>
+								<p>
+									<em>Hierarchical Semantic Search over a P2P Network</em><br/>
+									This is to enhance search mechanism in P2P network by using semantic relationship between words in the query. 
+									The application was developed using Java, Swings, XML and Netgraph software. 
+									Presented this concept in International Conference on Computer Applications (ICCA-2010).
+								</p>
+							</div>
+						</div>
+						<div class="row masters">
+							<div class="col-lg-4 col-md-4 col-sm-4 school">
+								<h4>SUNY at Buffalo, New York</h4>
+								<p>2011 - 2013</p>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 degree">
+								<strong>
+									Masters in Computer Science & Engineering
+								</strong>
+								<p>
+									<em>Text Based Information Retrieval System</em><br/>
+									Building a Parser, Indexer and Retriever system for a document collection of 100,000 text and wiki documents. 
+									The aim was to build a complete search tool for the given document collection. Implement techniques for 
+									improving search efficiency and performance such as compression and relevance feedback and a web search 
+									including link analysis techniques such as PageRank using C++ STL Containers
+								</p>
+								<p>
+									<em>Constructing a service based distributed system</em><br/>
+									Aim was to build a multi-tier distributed system comprising two major sub-systems. 
+									1. A simple data acquisition system and 
+									2. A web service based web application that processes and serves the data collected. 
+									The two sub-systems were loosely coupled via a database. 
+									Google Map API was used to display information in a user-friendly form. 
+									The project was developed using Java, JSP. MySQL was used as the backend. 
+									REST protocol was followed for constructing the web services.
+								</p>
+								<p>
+									<em>Database System</em><br/>
+									Implemented a framework for storing ﬁles (consisting of data records) with one or more indexes that 
+									use the B+-tree data structure. The indexes will be stored in main memory, with their persistent versions being kept on disk.
+									A query parser was built.
+								</p>
+							</div>
+						</div>
+						
+					</div>
+					<div id="experienceContents" class="portfolio-tab-contents col-lg-12 col-md-12 col-sm-12 hide">
+						<div class="row cerner">
+							<div class="col-lg-4 col-md-4 col-sm-4 org">
+								<h4>Cerner Corp, Kansas City, MO</h4>
+								<p>July 2014 - Present</p>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 project">
+								<strong>
+									Software Engineer II
+								</strong>
+								<p>
+									<em>Building a large scale web application for Contract Management used in Hospitals and Clinics</em><br/>
+									<u>Technologies:</u> AngularJS 1.2, AngularStrap, Twitter Bootstrap, HTML5, CSS3 compiled by LESS, JavaScript, 
+									JQuery, ReactJS, Jasmine (Behavioral Testing), Underscore.js, Grunt, NodeJs, Java, Groovy.
+									<u>Environment</u>Git and SVN, Agile (Sprint and Kanban), JIRA, Jenkins, Webstorm, IntelliJ, Tomcat, Maven.
+								</p>
+							</div>
+						</div>
+						<div class="row mathworks">
+							<div class="col-lg-4 col-md-4 col-sm-4 org">
+								<h4>MathWorks, Natick, MA</h4>
+								<p>Jan 2013 - July 2014</p>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 project">
+								<strong>
+									Software Engineer
+								</strong>
+								<p>
+									<em>Built modules of MATLAB as a web desktop application and delivered it as a SaaS.</em><br/>
+									<u>Technologies:</u> OO JavaScript using DOJO framework, HTML5, CSS3, Java, Pub/Sub model, MATLAB.
+									<u>Environment</u>Perforce, Gecko (Issues tracking), TeamCity, Agile (Sprint), Maven
+								</p>
+							</div>
+						</div>
+						<div class="row nforest">
+							<div class="col-lg-4 col-md-4 col-sm-4 org">
+								<h4>North Forest Office Space, Buffalo, NY</h4>
+								<p>May 2012 – Dec 2012</p>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 project">
+								<strong>
+									Software Engineer Intern
+								</strong>
+								<p>
+									<em>Built a web portal (https://compass.nforest.com) for North Forest team to manage office spaces information.</em><br/>
+									<u>Technologies:</u> Object Oriented PHP, JQuery, AJAX, MySQL, HTML5/CSS3-using TWIG templates, Twitter
+									Bootstrap components.
+									<u>Environment</u>Web application on LAMP platform using Symfony2 framework for PHP and used Git for versioning.
+								</p>
+							</div>
+						</div>
+						<div class="row cts">
+							<div class="col-lg-4 col-md-4 col-sm-4 org">
+								<h4>Cognizant Technology Solutions, India</h4>
+								<p>Jun 2010 – July 2011</p>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 project">
+								<strong>
+									Programmer
+								</strong>
+								<p>
+									<em>Software development consulting projects for Aetna Healthacare, US for Member Enrollment Process</em><br/>
+									<u>Technologies:</u> COBOL, DB2, Java, ORACLE.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
 		<footer>
-			<p>
-				&copy; Copyright  by Jothi
-			</p>
+			<div class="contact">
+				<a href="mailto:jothi137@gmail.com" target="_blank"><img src="src/images/email-icon-small.png"></a>
+			<a href="https://www.linkedin.com/pub/jothi-venkataraman/1b/489/383" target="_blank">
+				<img src="src/images/linkedin icon.png">
+			</a>
+			</div>
+			
 		</footer>
 	</body>
 </html>

@@ -1,6 +1,6 @@
 body {
 	background-image: url("../images/background_gradient.png");
-	background-repeat: no-repeat;
+	background-repeat: repeat-x;
 	background-size: 100% 100%;
 }
 
@@ -10,14 +10,14 @@ body {
 .contents {
 	padding:20px;
 }
-footer {
-	position: absolute;
+/*footer {
+	position: fixed;
 	text-align: center;
 	height: 30px;
 	bottom: 0;
 	left: 0;
 	right: 0;
-}
+}*/
 
 .hide {
 	display: none;
@@ -28,8 +28,9 @@ footer {
 }
 
 .my-pic {
-	width: 200px;
-    height: 200px;
+	width: 300px;
+    height: 300px;
+    border-radius: 50%;
     -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
     transition: width 2s, height 2s, transform 2s;
 }
@@ -41,9 +42,15 @@ footer {
 .my-pic:hover {
     width: 400px;
     height: 400px;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
 }
 .clearfix {
 	clear: both;
+}
+
+.degree, .project {
+	margin-top: 12px;
+}
+
+.contact {
+	float: right;
 }
