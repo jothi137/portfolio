@@ -20,7 +20,7 @@ var portfolio = function() {
 		clearOldTabStatus();
 		$("#aboutMe").addClass("active");
 		$("#aboutMeContents").removeClass("hide").addClass("show");
-		var content = $("#aboutMeContents .text")[0];
+		var content = $("#aboutMeContents .text .summary")[0];
 		content.innerHTML = me;
 	};
 	
