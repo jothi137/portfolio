@@ -54,3 +54,13 @@ body {
 .contact {
 	float: right;
 }
+
+.mail{
+	width: 30px;
+	height: 30px;
+}
+
+.linked{
+	width: 27px;
+	height: 27px;
+}
